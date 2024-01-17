@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 3px dotted purple;
+            height: 300px;
+            display: flex;
+            /* justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; */
+            /* flex-direction: column; */
+        }
+
+        .box {
+            font-size: 3ex;
+            font-weight: 700;
+            border: 3px dashed peru;
+            width: 100px;
+            /* height: 100px; */
+        }
+
+        #box2 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div id="box2" class="box">Box-2</div>
+    </div>
+</body>
+
+</html>
