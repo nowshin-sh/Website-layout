@@ -5,13 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="https://kit.fontawesome.com/675b32965b.js" crossorigin="anonymous"></script>
+    <style>
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .login-form input {
+            border-color: #eeeff6;
+            border-style: outset;
+            border-width: 1px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 15px #d7defd;
+            margin-top: 1em;
+            font-size: 1.5em;
+            padding: 5px 10px;
+        }
+
+        .login-form input:focus {
+            outline: 1px solid #4456b1;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: #5b6fd2;
+            color: azure;
+            border-style: none;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        nav {
+            background-image: radial-gradient(circle, rgba(132, 138, 240, 1) 0%, rgb(4, 42, 138) 100%);
+            min-height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: None;
+            color: azure;
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="" class="login-form">
-        <h1>Please login</h1>
-        <input type="email" name="" id="" placeholder="Please Enter Your Email">
-    </form>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Notice</a>
+                <a href="">Editorial</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h1>Please login</h1>
+            <input type="email" name="" id="" placeholder="Enter Email" required>
+            <input type="password" name="" id="" placeholder="Enter Password" required>
+            <input type="submit" value="Log in">
+        </form>
+    </section>
 </body>
 
 </html>
